@@ -6,7 +6,7 @@ class Mention
     return Mention.none unless letters.present?
     users = User.limit(5).where('username like ?', "#{letters}%").compact
     users.map do |user|
-      { name: user.username, image: user.gravatar_for(size: 30) }
+      { name: user.username, image: user.gravatar_for(size: 28) }
     end
   end
 
@@ -16,13 +16,13 @@ class Mention
       mention = Mention.create_from_match(match)
       next unless mention
       post.update_attributes!(content: mention.markdown_string(post.content))
-      #mention.notify!(comment.ticket) if comment.valid?
+      # You could fire an email to the user here with ActionMailer
       mention
     end.compact
   end
 
   def self.create_from_match(match)
-    user = User.find_by(username: match.downcase.delete('@'))
+    user = User.find_by(username: match.delete('@'))
     UserMention.new(user) if user.present?
   end
 
@@ -34,8 +34,7 @@ class Mention
     def markdown_string(text)
       host = Rails.env.development? ? 'localhost:3000' : '' # add your app's host here!
       text.gsub(/@#{mentionable.username}/i,
-                "[**@#{mentionable.username}**](#{user_url(mentionable,
-                                                           host: host)})")
+                "[**@#{mentionable.username}**](#{user_url(mentionable, host: host)})")
     end
   end
 end
