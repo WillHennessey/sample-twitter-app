@@ -10,7 +10,7 @@ user_1:
 user_2:
   id: 2
   name: Luke Skywalker
-  username: lukeskywaler
+  username: lukeskywalker
   email_address: lukeskywalker3254@gmail.com
   password_digest: <%= User.digest("Password1!") %>
 
