@@ -2,7 +2,7 @@
 
 To test this app, clone or download it, navigate to within the directory and run the following commands:
 * <tt>rake db:create db:migrate db:fixtures:load RAILS_ENV=development</tt>
-* <tt>rails server<tt>
+* <tt>rails server</tt>
 
 Once the server is running, navigate to http://localhost:3000
 Signup to the app by clicking the 'signup here' button then login and add some posts!
