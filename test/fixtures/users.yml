@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+user_1:
+  id: 1
+  name: Darth Vader
+  username: darthvader
+  email_address: vader7508@gmail.com
+  password_digest: <%= User.digest("Password1!") %>
+
+user_2:
+  id: 2
+  name: Luke Skywalker
+  username: lukeskywaler
+  email_address: lukeskywalker3254@gmail.com
+  password_digest: <%= User.digest("Password1!") %>
+
+user_3:
+  id: 3
+  name: Han Solo
+  username: handaman
+  email_address: handamansolo@gmail.com
+  password_digest: <%= User.digest("Password1!") %>
+
+user_4:
+  id: 4
+  name: Chewbacca
+  username: chewydabeast
+  email_address: chewbaccawookie43@gmail.com
+  password_digest: <%= User.digest("Password1!") %>

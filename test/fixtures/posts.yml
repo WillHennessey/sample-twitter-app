@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+post_1:
+  content: "[**@lukeskywalker**](http://localhost:3000/users/1) I am your father..."
+  user_id: 1
+
+post_2:
+  content: 'Noooooooooooo!!! [**@darthvader**](http://localhost:3000/users/1)'
+  user_id: 2
+
+post_3:
+  content: 'LOL! Hey [**@chewydabeast**](http://localhost:3000/users/4) get a load of these nerf herders :-p'
+  user_id: 3
+
+post_4:
+  content: 'Rrrrrrr-ghghghghgh! [**@handaman**](http://localhost:3000/users/3)'
+  user_id: 4

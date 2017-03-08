@@ -1,0 +1,25 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @user.gravatar_for %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>
+    <% if @user.posts.any? %>
+        <h3>Posts (<%= @user.posts.count %>)</h3>
+        <ol class="microposts">
+          <%= render @posts %>
+        </ol>
+        <%= will_paginate @posts %>
+    <% end %>
+  </div>
+</div>
+
