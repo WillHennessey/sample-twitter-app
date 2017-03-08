@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 post_1:
-  content: "[**@lukeskywalker**](http://localhost:3000/users/1) I am your father..."
+  content: "[**@lukeskywalker**](http://localhost:3000/users/2) I am your father..."
   user_id: 1
 
 post_2:
