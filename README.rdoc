@@ -1,6 +1,7 @@
 == README
 
 To test this app, clone or download it, navigate to within the directory and run the following commands:
+* <tt>bundle install</tt>
 * <tt>rake db:create db:migrate db:fixtures:load RAILS_ENV=development</tt>
 * <tt>rails server</tt>
 
