@@ -30,7 +30,7 @@ gem 'bcrypt-ruby', '3.1.5'
 gem 'bcrypt'
 
 # Pagination
-gem 'will_paginate', '3.0.4'
+gem 'will_paginate', '3.0.5'
 gem 'bootstrap-will_paginate', '0.0.9'
 
 # atwho
